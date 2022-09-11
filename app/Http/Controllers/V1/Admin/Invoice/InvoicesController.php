@@ -28,6 +28,7 @@ class InvoicesController extends Controller
             ->applyFilters($request->all())
             ->select('invoices.*', 'customers.name')
             ->latest()
+	    ->orderBy('id', 'desc')
             ->paginateData($limit);
 
         return (InvoiceResource::collection($invoices))

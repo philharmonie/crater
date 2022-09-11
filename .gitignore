@@ -17,3 +17,7 @@ Homestead.yaml
 /public/docs
 /.scribe
 !storage/fonts/.gitkeep
+
+database/seeders/InvoiceSeeder.php
+database/seeders/ItemSeeder.php
+database/seeders/PaymentSeeder.php

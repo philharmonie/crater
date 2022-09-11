@@ -16,19 +16,12 @@
     {{-- Subcopy --}}
     @slot('subcopy')
         @component('mail::subcopy')
-            {!! $data['body'] !!}
+            {!! $data['body'] !!} 
             @if(!$data['attach']['data'])
                 @component('mail::button', ['url' => $data['url']])
-                    View Invoice
+                    Rechnung ansehen
                 @endcomponent
             @endif
-        @endcomponent
-    @endslot
-
-    {{-- Footer --}}
-    @slot('footer')
-        @component('mail::footer')
-            Powered by <a class="footer-link" href="https://craterapp.com">Crater</a>
         @endcomponent
     @endslot
 @endcomponent
