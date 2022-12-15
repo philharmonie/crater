@@ -26,7 +26,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/modules/styles/{style}', StyleController::class);
 
 Route::get('/modules/scripts/{script}', ScriptController::class);
-
+Route::get('test', function() {
+    phpinfo();
+});
 
 // Admin Auth
 // ----------------------------------------------
